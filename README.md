@@ -7,7 +7,8 @@
 # A New Version
 
 I propose in this repository to develop a platform game in the Mario Bros style using the knowledge taught by Filipe Alves. I hope you like it and can share that knowledge. I recommend that you watch Filipe's tutorial.
-A big hug to everyone.
+A big hug to everyone. 
+You must access the original repository at this [link](https://github.com/filipealvesdef/yellowball-game-yt) and on [YouTube](https://www.youtube.com/watch?v=z3r8up9cz3w).
 
 ### What will be done then?
 
