@@ -18,7 +18,7 @@ You must access the original repository at this [link](https://github.com/filipe
 - The camera accompanies the character when he is close to the end of the scene and stops moving when he is drawn away from the end of the screen in both directions.
 - For the time being the mechanics of counting life and damage to enemies are maintained.
 
-Each step of the project will be done with a tutorial guide explaining what was done.
+Each step of the project will be done with a tutorial guide on wiki page explaining what was done.
 I hope you enjoy this material well.
 A big hug to everyone.
 
