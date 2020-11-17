@@ -7,3 +7,4 @@ export function atualiza() {
     chao.atualiza();
     bloco.atualiza();
 }
+//oi
