@@ -4,22 +4,22 @@ import {
   Sprite, bg, spriteBoneco, perdeu, jogar, novo, spriteRecord,
   spriteChao, redObstacle, pinkObstacle, blueObstacle, greenObstacle, yellowObstacle
 } from "./Sprite.js";
-import {  } from "./Game.js";
+import * as Game from "./Game.js";
 
 export function desenha() {
   bg.desenha(0, 0);
-  ctx.fillStyle = "#fff";
-  ctx.font = "50px Arial";
-  ctx.fillText(bloco.score, 30, 68);
-  ctx.fillText(bloco.vidas, 540, 68);
-  ctx.fillStyle = "rgba(0, 0, 0, " + labelNovaFase.opacidade + ")";
-  ctx.fillText(labelNovaFase.texto, canvas.width / 2 - ctx.measureText(labelNovaFase.texto).width / 2, canvas.height / 3);
-  if (estadoAtual == estados.jogando) obstaculos.desenha();
-  chao.desenha();
-  bloco.desenha();
-  if (estadoAtual == estados.jogar) jogar.desenha(LARGURA / 2 - jogar.largura / 2, ALTURA / 2 - jogar.altura / 2);
+  Game.ctx.fillStyle = "#fff";
+  Game.ctx.font = "50px Arial";
+  Game.ctx.fillText(Game.bloco.score, 30, 68);
+  Game.ctx.fillText(Game.bloco.vidas, 540, 68);
+  Game.ctx.fillStyle = "rgba(0, 0, 0, " + Game.labelNovaFase.opacidade + ")";
+  Game.ctx.fillText(Game.labelNovaFase.texto, Game.canvas.width / 2 - Game.ctx.measureText(Game.labelNovaFase.texto).width / 2, Game.canvas.height / 3);
+  if (Game.estadoAtual == Game.estados.jogando) Game.obstaculos.desenha();
+  Game.chao.desenha();
+  Game.bloco.desenha();
+  if (Game.estadoAtual == Game.estados.jogar) jogar.desenha(Game.LARGURA / 2 - jogar.largura / 2, Game.ALTURA / 2 - jogar.altura / 2);
 
-  if (estadoAtual == estados.perdeu) {
+  if (Game.estadoAtual == Game.estados.perdeu) {
     perdeu.desenha(LARGURA / 2 - perdeu.largura / 2, ALTURA / 2 - perdeu.altura / 2 - spriteRecord.altura / 2);
     spriteRecord.desenha(LARGURA / 2 - spriteRecord.largura / 2, ALTURA / 2 + perdeu.altura / 2 - spriteRecord.altura / 2 - 25);
     ctx.fillStyle = "#fff";
@@ -31,3 +31,7 @@ export function desenha() {
     } else ctx.fillText(record, 420, 470);
   }
 }
+
+// no fim importei game como Game e todos seu objetos e o jogo esta quase todo refatorado,
+// aogora todas as funções se comportam como metodos
+// falata fazer o mesmo com metodo clique e terminar a refatoração
