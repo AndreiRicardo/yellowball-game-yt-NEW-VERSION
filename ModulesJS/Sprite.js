@@ -1,3 +1,4 @@
+import  * as Game  from "./Game.js";
 function Sprite(x, y, largura, altura) {
 	this.x = x;
 	this.y = y;
@@ -5,9 +6,10 @@ function Sprite(x, y, largura, altura) {
 	this.altura = altura;
 
 	this.desenha = function (xCanvas, yCanvas) {
-		ctx.drawImage(img, this.x, this.y, this.largura, this.altura, xCanvas, yCanvas, this.largura, this.altura);
+		Game.ctx.drawImage(Game.img, this.x, this.y, this.largura, this.altura, xCanvas, yCanvas, this.largura, this.altura);
 	}
 }
+// o  uqe aconteceu aqui importei game como game e puxei os objetos criados em game
 
 var bg = new Sprite(0, 0, 600, 600),
 	spriteBoneco = new Sprite(618, 16, 87, 87),
