@@ -16,3 +16,4 @@ export function clique(event) {
     else if (estadoAtual == estados.jogando)
         bloco.pula();
 }
+//

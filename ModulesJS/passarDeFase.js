@@ -15,3 +15,4 @@ export function passarDeFase() {
         labelNovaFase.fadeOut(0.4);
     }, 800);
 }
+//

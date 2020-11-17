@@ -35,3 +35,4 @@ export function desenha() {
 // no fim importei game como Game e todos seu objetos e o jogo esta quase todo refatorado,
 // aogora todas as funções se comportam como metodos
 // falata fazer o mesmo com metodo clique e terminar a refatoração
+//

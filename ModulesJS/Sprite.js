@@ -30,3 +30,4 @@ export {
 	Sprite, bg, spriteBoneco, perdeu, jogar, novo, spriteRecord,
 	spriteChao, redObstacle, pinkObstacle, blueObstacle, greenObstacle, yellowObstacle
 };
+//
