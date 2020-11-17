@@ -27,4 +27,4 @@ var bg = new Sprite(0, 0, 600, 600),
 export {
 	Sprite, bg, spriteBoneco, perdeu, jogar, novo, spriteRecord,
 	spriteChao, redObstacle, pinkObstacle, blueObstacle, greenObstacle, yellowObstacle
-}
+};

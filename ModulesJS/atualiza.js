@@ -1,4 +1,4 @@
-import { estadoAtual, estados, obstaculos, chao, bloco } from './Game';
+import { estadoAtual, estados, obstaculos, chao, bloco } from './Game.js';
 
 export function atualiza() {
     if (estadoAtual == estados.jogando)

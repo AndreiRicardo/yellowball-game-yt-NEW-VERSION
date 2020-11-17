@@ -1,4 +1,4 @@
-import { atualiza } from './atualiza';
+import { atualiza } from './Atualiza.js';
 import { desenha } from './Desenha.js';
 
 export function roda() {

@@ -1,4 +1,11 @@
 
+
+import {
+  Sprite, bg, spriteBoneco, perdeu, jogar, novo, spriteRecord,
+  spriteChao, redObstacle, pinkObstacle, blueObstacle, greenObstacle, yellowObstacle
+} from "./Sprite.js";
+import {  } from "./Game.js";
+
 export function desenha() {
   bg.desenha(0, 0);
   ctx.fillStyle = "#fff";

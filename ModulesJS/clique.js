@@ -1,6 +1,7 @@
-import { estadoAtual, estados, bloco, ALTURA, obstaculos } from './Game';
+import { estadoAtual, estados, bloco, ALTURA, obstaculos } from './Game.js';
 
 export function clique(event) {
+    console.log("eae?")
     if (estadoAtual == estados.jogar) {
         estadoAtual = estados.jogando;
         frames = 0;

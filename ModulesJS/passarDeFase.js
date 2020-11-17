@@ -1,4 +1,4 @@
-import { VELOCIDADE, faseAtual, bloco, labelNovaFase } from './Game';
+import { VELOCIDADE, faseAtual, bloco, labelNovaFase } from './Game.js';
 
 export function passarDeFase() {
     VELOCIDADE++;

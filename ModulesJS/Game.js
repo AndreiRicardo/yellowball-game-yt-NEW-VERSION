@@ -1,9 +1,10 @@
-import { clique } from './clique';
-import { passarDeFase } from './passarDeFase';
-import { roda } from './roda';
+import { clique } from './Clique.js';
+import { passarDeFase } from './PassarDeFase.js';
+import { roda } from './Roda.js';
 import {
     spriteBoneco, spriteChao, redObstacle, pinkObstacle, blueObstacle, greenObstacle, yellowObstacle
-} from "./Sprite";
+} from "./Sprite.js";
+
 //variáveis do jogo
 
 export var canvas, ctx, ALTURA, LARGURA, VELOCIDADE = 6, maxPulos = 3,
@@ -236,4 +237,4 @@ function main() {
 //inicializa o jogo
 
 
-  main();
+main();
