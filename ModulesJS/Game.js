@@ -5,6 +5,7 @@ import {
     spriteBoneco, spriteChao, redObstacle, pinkObstacle, blueObstacle, greenObstacle, yellowObstacle
 } from "./Sprite.js";
 
+
 //variáveis do jogo
 
 export var canvas, ctx, ALTURA, LARGURA, VELOCIDADE = 6, maxPulos = 3,
