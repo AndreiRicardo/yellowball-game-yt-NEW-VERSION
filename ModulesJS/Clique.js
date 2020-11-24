@@ -1,19 +1,19 @@
-import { estadoAtual, estados, bloco, ALTURA, obstaculos } from './Game.js';
-
+//import { estadoAtual, estados, bloco, ALTURA, obstaculos } from './Game.js';
+import * as Game from './Game.js';
 export function clique(event) {
     console.log("eae?")
-    if (estadoAtual == estados.jogar) {
-        estadoAtual = estados.jogando;
+    if (Game.estadoAtual == Game.estados.jogar) {
+        Game.estadoAtual = Game.estados.jogando;
         frames = 0;
     }
 
-    else if (estadoAtual == estados.perdeu && bloco.y >= 2 * ALTURA) {
-        estadoAtual = estados.jogar;
-        obstaculos.limpa();
-        bloco.reset();
+    else if (Game.estadoAtual == Game.estados.perdeu && Game.bloco.y >= 2 * ALTURA) {
+        Game.estadoAtual = Game.estados.jogar;
+        Game.obstaculos.limpa();
+        Game.bloco.reset();
     }
 
-    else if (estadoAtual == estados.jogando)
-        bloco.pula();
+    else if (Game.estadoAtual == Game.estados.jogando)
+        Game.bloco.pula();
 }
 //
