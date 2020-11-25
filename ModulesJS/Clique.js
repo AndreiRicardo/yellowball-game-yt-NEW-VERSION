@@ -19,7 +19,7 @@ export function Clique(event) {
      */
     // teste funciona ele pula Game.bloco.pula();
 
-    Game.estadoAtual == Game.estados.jogar ? (Game.estadoAtual = Game.estados.jogando,
+    Game.estadoAtual == Game.estados.jogar ? (Game.estadoAtual == Game.estados.jogando,
         frames = 0) : (Game.estadoAtual == Game.estados.perdeu && Game.bloco.y >= 2 * Game.ALTURA) ? (Game.estadoAtual = Game.estados.jogar,
             Game.obstaculos.limpa(),
             Game.bloco.reset()) : (Game.estadoAtual == Game.estados.jogando) ? Game.bloco.pula() : console.log("num deu");
