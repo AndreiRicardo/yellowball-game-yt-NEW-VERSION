@@ -1,18 +1,18 @@
-import { VELOCIDADE, faseAtual, bloco, labelNovaFase } from './Game.js';
-
+/* import { VELOCIDADE, faseAtual, bloco, labelNovaFase } from './Game.js'; */
+import * as Game from './Game.js';
 export function passarDeFase() {
-    VELOCIDADE++;
-    faseAtual++;
-    bloco.vidas++;
+    Game.VELOCIDADE++;
+    Game.faseAtual++;
+    Game.bloco.vidas++;
 
-    if (faseAtual == 4)
-        bloco.gravidade *= 0.6;
+    if (Game.faseAtual == 4)
+        Game.bloco.gravidade *= 0.6;
 
-    labelNovaFase.texto = "Level " + faseAtual;
-    labelNovaFase.fadeIn(0.4);
+    Game.labelNovaFase.texto = "Level " + Game.faseAtual;
+    Game.labelNovaFase.fadeIn(0.4);
 
     setTimeout(function () {
-        labelNovaFase.fadeOut(0.4);
+        Game.labelNovaFase.fadeOut(0.4);
     }, 800);
 }
 //

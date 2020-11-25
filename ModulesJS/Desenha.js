@@ -24,7 +24,7 @@ export function desenha() {
     Sprites.perdeu.desenha(Game.LARGURA / 2 - Sprites.perdeu.largura / 2, Game.ALTURA / 2 - Sprites.perdeu.altura / 2 - Sprites.spriteRecord.altura / 2);
     Sprites.spriteRecord.desenha(Game.LARGURA / 2 - Sprites.spriteRecord.largura / 2, Game.ALTURA / 2 + Sprites.perdeu.altura / 2 - Sprites.spriteRecord.altura / 2 - 25);
     Game.ctx.fillStyle = "#fff";
-    Game.ctx.fillText(bloco.score, 375, 390);
+    Game.ctx.fillText(Game.bloco.score, 375, 390);
 
     if (Game.bloco.score > Game.record) {
       Sprites.novo.desenha(Game.LARGURA / 2 - 180, Game.ALTURA / 2 + 30);
