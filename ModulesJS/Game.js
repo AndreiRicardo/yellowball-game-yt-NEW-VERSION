@@ -1,4 +1,4 @@
-import { clique } from './Clique.js';
+import { Clique } from './Clique.js';
 import { passarDeFase } from './PassarDeFase.js';
 import { roda } from './Roda.js';
 import {
@@ -220,7 +220,7 @@ function main() {
     ctx = canvas.getContext("2d");
     document.body.appendChild(canvas);
 
-    document.addEventListener("mousedown", clique);
+    document.addEventListener("mousedown", Clique);
 
     estadoAtual = estados.jogar;
 
