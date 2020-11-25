@@ -1,10 +1,11 @@
-import { estadoAtual, estados, obstaculos, chao, bloco } from './Game.js';
-
+//import { estadoAtual, estados, obstaculos, chao, bloco } from './Game.js';
+import * as Game from './Game.js';
 export function atualiza() {
-    if (estadoAtual == estados.jogando)
-        obstaculos.atualiza();
+    if (Game.estadoAtual == Game.estados.jogando)
+        Game.estadoAtual == Game.estados.jogando;
+        Game.obstaculos.atualiza();
 
-    chao.atualiza();
-    bloco.atualiza();
+    Game.chao.atualiza();
+    Game.bloco.atualiza();
 }
 //
