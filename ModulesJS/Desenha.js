@@ -23,8 +23,8 @@ export function desenha() {
   if (Game.estadoAtual == Game.estados.perdeu) {
     Sprites.perdeu.desenha(Game.LARGURA / 2 - perdeu.largura / 2, Game.ALTURA / 2 - Sprites.perdeu.altura / 2 - Sprites.spriteRecord.altura / 2);
     Sprites.spriteRecord.desenha(Game.LARGURA / 2 - Sprites.spriteRecord.largura / 2, Game.ALTURA / 2 + Sprites.perdeu.altura / 2 - Sprites.spriteRecord.altura / 2 - 25);
-    ctx.fillStyle = "#fff";
-    ctx.fillText(Game.bloco.score, 375, 390);
+    Game.ctx.fillStyle = "#fff";
+    Game.ctx.fillText(Game.bloco.score, 375, 390);
 
     Sprites.perdeu.desenha(Game.LARGURA / 2 - Sprites.perdeu.largura / 2, Game.ALTURA / 2 - Sprites.perdeu.altura / 2 - Sprites.spriteRecord.altura / 2);
     Sprites.spriteRecord.desenha(Game.LARGURA / 2 - Sprites.spriteRecord.largura / 2, Game.ALTURA / 2 + Sprites.perdeu.altura / 2 - Sprites.spriteRecord.altura / 2 - 25);
