@@ -1,0 +1,2 @@
+/* config da canvas
+controle da camera */
