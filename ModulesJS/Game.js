@@ -1,9 +1,10 @@
 import { Clique } from './Clique.js';
 import { passarDeFase } from './PassarDeFase.js';
 import { roda } from './Roda.js';
-import {
+/* import {
     spriteBoneco, spriteChao, redObstacle, pinkObstacle, blueObstacle, greenObstacle, yellowObstacle
-} from "./Sprite.js";
+} from "./Sprite.js"; */
+import * as Sprites from "./Sprite.js";
 
 
 //variáveis do jogo
@@ -60,16 +61,16 @@ export var canvas, ctx, ALTURA, LARGURA, VELOCIDADE = 6, maxPulos = 3,
         },
 
         desenha: function () {
-            spriteChao.desenha(this.x, this.y);
-            spriteChao.desenha(this.x + spriteChao.largura, this.y);
+            Sprites.spriteChao.desenha(this.x, this.y);
+            Sprites.spriteChao.desenha(this.x + Sprites.spriteChao.largura, this.y);
         }
     },
 
     bloco = {
         x: 50,
         y: 0,
-        altura: spriteBoneco.altura,
-        largura: spriteBoneco.largura,
+        altura: Sprites.spriteBoneco.altura,
+        largura: Sprites.spriteBoneco.largura,
         gravidade: 1.6,
         velocidade: 0,
         forcaDoPulo: 23.6,
@@ -120,7 +121,7 @@ export var canvas, ctx, ALTURA, LARGURA, VELOCIDADE = 6, maxPulos = 3,
             ctx.save();
             ctx.translate(this.x + this.largura / 2, this.y + this.altura / 2);
             ctx.rotate(this.rotacao);
-            spriteBoneco.desenha(-this.largura / 2, -this.altura / 2);
+            Sprites.spriteBoneco.desenha(-this.largura / 2, -this.altura / 2);
             ctx.restore();
         }
     },
@@ -128,7 +129,7 @@ export var canvas, ctx, ALTURA, LARGURA, VELOCIDADE = 6, maxPulos = 3,
     obstaculos = {
         _obs: [],
         _scored: false,
-        _sprites: [redObstacle, pinkObstacle, blueObstacle, greenObstacle, yellowObstacle],
+        _sprites: [Sprites.redObstacle, Sprites.pinkObstacle, Sprites.blueObstacle, Sprites.greenObstacle, Sprites.yellowObstacle],
 
         timerInsere: 0,
 
