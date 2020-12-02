@@ -16,7 +16,6 @@ export function Clique(event) {
     else if (Game.estadoAtual == Game.estados.jogando) {
         Game.bloco.pula();
     }
-}
      */
     // teste funciona ele pula Game.bloco.pula();
 
@@ -25,5 +24,5 @@ export function Clique(event) {
             Game.obstaculos.limpa(),
             Game.bloco.reset()) : (Game.estadoAtual == Game.estados.jogando) ? Game.bloco.pula() : console.log("num deu");
 
-
-
+}
+//
