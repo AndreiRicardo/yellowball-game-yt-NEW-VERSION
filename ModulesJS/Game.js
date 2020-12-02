@@ -1,3 +1,4 @@
+import { estados } from "./Stats.js";
 import { Clique } from './Clique.js';
 import { passarDeFase } from './PassarDeFase.js';
 import { roda } from './Roda.js';
@@ -42,11 +43,7 @@ export var canvas, ctx, ALTURA, LARGURA, VELOCIDADE = 6, maxPulos = 3,
         }
     },
 
-    estados = {
-        jogar: 0,
-        jogando: 1,
-        perdeu: 2
-    },
+   
 
     chao = {
         y: 550,

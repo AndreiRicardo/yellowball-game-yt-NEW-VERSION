@@ -4,6 +4,7 @@
 } from "./Sprite.js"; */
 import * as Sprites from "./Sprite.js";
 import * as Game from "./Game.js";
+import * as Stats from "./Stats.js";
 
 export function desenha() {
   Sprites.bg.desenha(0, 0);
@@ -13,12 +14,12 @@ export function desenha() {
   Game.ctx.fillText(Game.bloco.vidas, 540, 68);
   Game.ctx.fillStyle = "rgba(0, 0, 0, " + Game.labelNovaFase.opacidade + ")";
   Game.ctx.fillText(Game.labelNovaFase.texto, Game.canvas.width / 2 - Game.ctx.measureText(Game.labelNovaFase.texto).width / 2, Game.canvas.height / 3);
-  if (Game.estadoAtual == Game.estados.jogando) Game.obstaculos.desenha();
+  if (Game.estadoAtual == Stats.estados.jogando) Game.obstaculos.desenha();
   Game.chao.desenha();
   Game.bloco.desenha();
-  if (Game.estadoAtual == Game.estados.jogar) Sprites.jogar.desenha(Game.LARGURA / 2 - Sprites.jogar.largura / 2, Game.ALTURA / 2 - Sprites.jogar.altura / 2);
+  if (Game.estadoAtual == Stats.estados.jogar) Sprites.jogar.desenha(Game.LARGURA / 2 - Sprites.jogar.largura / 2, Game.ALTURA / 2 - Sprites.jogar.altura / 2);
 
-  if (Game.estadoAtual == Game.estados.perdeu) {
+  if (Game.estadoAtual == Stats.estados.perdeu) {
     Sprites.perdeu.desenha(Game.LARGURA / 2 - Sprites.perdeu.largura / 2, Game.ALTURA / 2 - Sprites.perdeu.altura / 2 - Sprites.spriteRecord.altura / 2);
     Sprites.spriteRecord.desenha(Game.LARGURA / 2 - Sprites.spriteRecord.largura / 2, Game.ALTURA / 2 + Sprites.perdeu.altura / 2 - Sprites.spriteRecord.altura / 2 - 25);
     Game.ctx.fillStyle = "#fff";
