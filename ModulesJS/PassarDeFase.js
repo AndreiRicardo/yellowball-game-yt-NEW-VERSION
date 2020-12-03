@@ -9,7 +9,7 @@ export function passarDeFase() {
         bloco.gravidade *= 0.6;
 
     labelNovaFase.texto = "Level " + faseAtual;
-    labelNovaFase.fadeIn(0.4);
+    labelNovaFase.fadeIn(0.4);+
 
     setTimeout(function () {
         labelNovaFase.fadeOut(0.4);
