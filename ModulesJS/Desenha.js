@@ -4,7 +4,7 @@
 } from "./Sprite.js"; */
 import * as Sprites from "./Sprite.js";
 import * as Game from "./Game.js";
-import * as Stats from "./Stats.js";
+import * as Stats from "./Status.js";
 
 export function desenha() {
   Sprites.bg.desenha(0, 0);

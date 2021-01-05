@@ -1,4 +1,4 @@
-import * as Stats from "./Stats.js";
+import * as Status from "./Status.js";
 import { Clique } from './Clique.js';
 import { passarDeFase } from './PassarDeFase.js';
 import { roda } from './Roda.js';
@@ -83,7 +83,7 @@ export var canvas, ctx, ALTURA, LARGURA, VELOCIDADE = 6, maxPulos = 3,
             this.y += this.velocidade;
             this.rotacao += Math.PI / 180 * VELOCIDADE;
 
-            if (this.y > chao.y - this.altura && estadoAtual != Stats.estados.perdeu) {
+            if (this.y > chao.y - this.altura && estadoAtual != Status.estados.perdeu) {
                 this.y = chao.y - this.altura;
                 this.qntPulos = 0;
                 this.velocidade = 0;
@@ -220,7 +220,7 @@ function main() {
 
     document.addEventListener("mousedown", Clique);
 
-    estadoAtual = Stats.estados.jogar;
+    estadoAtual = Status.estados.jogar;
 
     record = localStorage.getItem("record");
 
