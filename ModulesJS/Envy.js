@@ -1,23 +1,29 @@
 //importando modulos
-
+import {} from "./Game.js";
+import { canvasTela } from './Envy';
 
 
 
 //variaveis globais
 
-export var canvasTela,
+export var variaveis = {
+    canvasTela,
     Contexto,
     ALTURA,
     LARGURA,
-    VELOCIDADE = 6,
-    maxPulos = 3,
+    VELOCIDADE,
+    maxPulos,
     estadoAtual,
     record,
     img,
-    pontosParaNovaFase = [5, 10, 15, 20],
-    faseAtual = 0,
+    pontosParaNovaFase ,
+    faseAtual,
     labelNovaFase,
-    estados,
+    estados ,
     floor,
     char,
-    obstaculos;
+    obstaculos
+}
+
+    // função set variaveis
+
