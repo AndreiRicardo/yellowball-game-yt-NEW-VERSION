@@ -4,7 +4,7 @@
 
 //variaveis globais
 
-export let variaveis = {
+export let Objs = {
     canvasTela: "",
     Contexto: "",
     ALTURA: "",
