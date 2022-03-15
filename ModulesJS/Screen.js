@@ -1,4 +1,3 @@
-export
 
 var canvas, ctx, LARGURA, ALTURA;
 
