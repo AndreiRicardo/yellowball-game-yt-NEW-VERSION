@@ -10,7 +10,7 @@ if (LARGURA >= 500) {
     ALTURA = 600;
 }
 
-function sCreen (){
+export function sCreen (){
 canvas = document.createElement("canvas");
 canvas.width = LARGURA;
 canvas.height = ALTURA;
@@ -20,4 +20,4 @@ canvas.style.backgroundColor = "blue";
 ctx = canvas.getContext("2d");
 document.body.appendChild(canvas);
 }
-sCreen()
+
