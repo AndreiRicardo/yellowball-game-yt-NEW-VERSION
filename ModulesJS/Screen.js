@@ -6,7 +6,7 @@ ALTURA = window.innerHeight;
 LARGURA = window.innerWidth;
 
 if (LARGURA >= 500) {
-    LARGURA = 600;
+    LARGURA = 1200;
     ALTURA = 600;
 }
 
