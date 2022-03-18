@@ -1,6 +1,6 @@
 
 var canvas, ctx, LARGURA, ALTURA, img = new Image()
-//teste de git
+
 
 
 img.src = "imagens/sheet.png"
