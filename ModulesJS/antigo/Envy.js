@@ -3,6 +3,7 @@
 
 
 //variaveis globais
+// ideia eh transformar tudo isso em interface
 
 export let Objs = {
     canvasTela:'',

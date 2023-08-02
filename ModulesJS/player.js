@@ -1,0 +1,1 @@
+let Player = new Player();
