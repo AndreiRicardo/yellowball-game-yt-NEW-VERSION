@@ -2,12 +2,12 @@ import { sCreen } from "./Screen.js";
 
 
 
-function mAin() {
+function MainGame() {
     sCreen()
 }
 
 
-mAin()  
+MainGame()  
 
 
 
