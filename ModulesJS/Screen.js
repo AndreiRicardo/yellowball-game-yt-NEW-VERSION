@@ -15,22 +15,22 @@ if (LARGURA >= 500) {
 
 export function sCreen() {
   console.log("tem qu sair alguma caralha dessa porra aqui tmbm");
-// propriendades
-var canvas,
-  ctx,
-  LARGURA,
-  ALTURA,
-  img = new Image();
+  // propriendades
+  var canvas,
+    ctx,
+    LARGURA,
+    ALTURA,
+    img = new Image();
 
-img.src = "Assets/sheet.png";
-ALTURA = window.innerHeight;
-LARGURA = window.innerWidth;
+  img.src = "Assets/sheet.png";
+  ALTURA = window.innerHeight;
+  LARGURA = window.innerWidth;
 
-if (LARGURA >= 500) {
-  LARGURA = 1200;
-  ALTURA = 600;
-}
-// configuração
+  if (LARGURA >= 500) {
+    LARGURA = 1900;
+    ALTURA = 910;
+  }
+  // configuração
 
   canvas = document.createElement("canvas");
   canvas.width = LARGURA;
@@ -38,6 +38,7 @@ if (LARGURA >= 500) {
   canvas.style.border = "1px solid #000";
   canvas.style.backgroundColor = "blue";
 
-  ctx = canvas.getContext("2d");
+  /*   ctx = canvas.getContext("2d"); */ // ainda não sei onde esse cara vai mas pra construção aqui nao preciso
+  canvas.getContext("2d");
   document.body.appendChild(canvas);
 }
