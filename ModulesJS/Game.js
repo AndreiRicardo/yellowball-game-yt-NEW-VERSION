@@ -1,7 +1,11 @@
 import { sCreen } from "./Screen.js";
 
 function MainGame() {
-    sCreen();
+   
+   
+    console.log("testando essa porra");
+    sCreen(); 
+
 }
 
 MainGame();
