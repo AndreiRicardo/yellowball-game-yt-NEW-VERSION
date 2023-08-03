@@ -1,4 +1,4 @@
-/* var canvas,
+var canvas,
   ctx,
   LARGURA,
   ALTURA,
@@ -11,27 +11,13 @@ LARGURA = window.innerWidth;
 if (LARGURA >= 500) {
   LARGURA = 1200;
   ALTURA = 600;
-} */
+}
 
-export function sCreen() {
+function sCreen() {
     // rever essa config nao pode ficar aqui
   console.log("tem qu sair alguma caralha dessa porra aqui tmbm");
-  // propriendades ========================================
-  var canvas,
-    ctx,
-    LARGURA,
-    ALTURA,
-    img = new Image();
 
-  img.src = "Assets/sheet.png";
-  ALTURA = window.innerHeight;
-  LARGURA = window.innerWidth;
-
-  if (LARGURA >= 500) {
-    LARGURA = 1900;
-    ALTURA = 910;
-  }
-  // configuração =========================================
+ 
 
   canvas = document.createElement("canvas");
   canvas.style.width = "100%";
@@ -44,3 +30,4 @@ export function sCreen() {
   // alterando propriedades do body no braço
   document.body.style.overflow = "hidden"; // em caso voce queira remover ou deixar os scroll da tela basta manter (scroll removido) ou remover esta linha que devolve as scrolls .
 }
+export {sCreen}
