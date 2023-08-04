@@ -14,10 +14,7 @@ if (LARGURA >= 500) {
 }
 
 function sCreen() {
-    // rever essa config nao pode ficar aqui
   console.log("tem qu sair alguma caralha dessa porra aqui tmbm");
-
- 
 
   canvas = document.createElement("canvas");
   canvas.style.width = "100%";
@@ -30,4 +27,4 @@ function sCreen() {
   // alterando propriedades do body no braço
   document.body.style.overflow = "hidden"; // em caso voce queira remover ou deixar os scroll da tela basta manter (scroll removido) ou remover esta linha que devolve as scrolls .
 }
-export {sCreen}
+export { sCreen };
