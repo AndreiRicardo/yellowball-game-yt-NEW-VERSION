@@ -15,11 +15,11 @@ text: console.log("temos um bostinha e merdinha aqui"),
     vidas: 3,
     colidindo: false,
 
-aCtion: function (){
+aCtion: ()=>{
     console.log("temos mais um")
     
 },
-upDate: function () {
+upDate: ()=> {
     this.velocidade += this.gravidade;
     this.y += this.velocidade;
     this.rotacao += Math.PI / 180 * VELOCIDADE;
@@ -31,13 +31,13 @@ upDate: function () {
     }
 },
 
-pula: function () {
+pula: ()=> {
     if (this.qntPulos < maxPulos) {
         this.velocidade = -this.forcaDoPulo;
         this.qntPulos++;
     }
 },
-reset: function () {
+reset: ()=> {
     this.velocidade = 0;
     this.y = 0;
     if (this.score > record) {
@@ -53,7 +53,7 @@ reset: function () {
     this.gravidade = 1.6;
 
 },
-drawing: function () {
+drawing: ()=> {
     contexto.save();
     contexto.translate(this.x + this.largura / 2, this.y + this.altura / 2);
     contexto.rotate(this.rotacao);
