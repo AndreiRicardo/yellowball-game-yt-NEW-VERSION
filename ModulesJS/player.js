@@ -1,11 +1,11 @@
-
+import {spriteBoneco  } from "./Sprite.js";
 let Player = {
   
 text: console.log("temos um bostinha e merdinha aqui"),
     x: 50,
     y: 0,
-   /*  altura: spriteBoneco.altura,
-    largura: spriteBoneco.largura, */
+  altura: spriteBoneco.altura,
+    largura: spriteBoneco.largura,
     gravidade: 1.6,
     velocidade: 0,
     forcaDoPulo: 23.6,
