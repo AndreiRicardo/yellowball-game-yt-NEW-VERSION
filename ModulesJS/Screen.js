@@ -21,7 +21,7 @@ function sCreen() {
   canvas.style.height = "100%";
   canvas.style.border = "1px solid #000";
   canvas.style.backgroundColor = "blue";
-  /*   ctx = canvas.getContext("2d"); */ // ainda não sei onde esse cara vai mas pra construção aqui nao preciso
+  ctx = canvas.getContext("2d");   // ainda não sei onde esse cara vai mas pra construção aqui nao preciso
   canvas.getContext("2d");
   document.body.appendChild(canvas);
   // alterando propriedades do body no braço
