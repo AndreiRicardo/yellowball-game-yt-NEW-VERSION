@@ -1,0 +1,5 @@
+{
+    "livePreview.defaultPreviewPath": "/index.html",
+    "livePreview.customExternalBrowser": "Chrome",
+    "livePreview.openPreviewTarget": "External Browser"
+}
