@@ -23,7 +23,7 @@ function sCreen() {
   canvas.style.height = "100%";
   canvas.style.border = "1px solid #000";
   canvas.style.backgroundColor = "blue";
-  ctx = canvas.getContext("2d");/ / colocando a canvas num contexto nesse caso o que for desenhado aqui eh pra esse objeto
+  ctx = canvas.getContext("2d"); // colocando a canvas num contexto nesse caso o que for desenhado aqui eh pra esse objeto
  /*  canvas.getContext("2d"); */
   document.body.appendChild(canvas); // aqui estou inserindo a cabvas no body do html
 
