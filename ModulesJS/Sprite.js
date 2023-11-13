@@ -1,5 +1,5 @@
 const img = new Image();
-img.src = ".../Assets/sheet.png";
+img.src = "../Assets/sheet.png";
 function Sprite(x, y, largura, altura) {
   this.x = x;
   this.y = y;
