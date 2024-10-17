@@ -1,15 +1,11 @@
+import { sprites } from './sprites.js';
+
 export const char = {
     x: 50,
     y: 0,
-    altura: 50, // Ajuste conforme o sprite
-    largura: 50, // Ajuste conforme o sprite
-    gravidade: 1.6,
-    velocidade: 0,
-    forcaDoPulo: 23.6,
-    qntPulos: 0,
-    score: 0,
-    vidas: 3,
-    colidindo: false,
+    largura: 50,
+    altura: 50,
+    // ... outros atributos
 
     upDate: function () {
         // Lógica de atualização do personagem
@@ -24,6 +20,6 @@ export const char = {
     },
 
     drawing: function (contexto) {
-        // Desenho do personagem
+        sprites.desenhaBoneco(contexto, this.x, this.y);
     }
 };
