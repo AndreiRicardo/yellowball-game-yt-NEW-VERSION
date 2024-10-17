@@ -3,9 +3,10 @@ import { floor } from './floor.js';
 import { obstaculos } from './obstaculos.js';
 import { estados, clique, passarDeFase } from './game.js';
 import { labelNovaFase } from './labelNovaFase.js';
+import { sprites } from './sprites.js'; // Importando o módulo sprites.js
 
 let ALTURA, LARGURA, canvasTela, contexto, record, img;
-let estadoAtual
+let estadoAtual;
 
 function main() {
     ALTURA = window.innerHeight;
@@ -30,8 +31,7 @@ function main() {
 
     record = localStorage.getItem("record") || 0;
 
-    img = new Image();
-    img.src = "Assets/sheet.png"; // Atualizando o caminho para o PNG
+    sprites.init(); // Inicializa a carga da imagem do sprite
 
     running();
 }
