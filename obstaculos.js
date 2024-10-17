@@ -1,3 +1,5 @@
+import { sprites } from './sprites.js';
+
 export const obstaculos = {
     _obs: [],
     _scored: false,
@@ -11,7 +13,9 @@ export const obstaculos = {
     },
 
     drawing: function (contexto) {
-        // Desenho dos obstáculos
+        for (let obj of this._obs) {
+            sprites.desenhaObstaculo(contexto, obj.x, obj.y); // Usa a função do sprites.js
+        }
     },
 
     limpa: function () {
